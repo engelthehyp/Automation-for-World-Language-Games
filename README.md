@@ -11,6 +11,6 @@ There are also some other tools, which do things like select your name automatic
 
 ## Tools I've made so far:
 - Name Auto-select (COMING SOON)
-- Disabled Games Launcher (COMING SOON)
+- Disabled Games Launcher
 
 I hope they come in handy for you.
