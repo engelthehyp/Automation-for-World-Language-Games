@@ -7,6 +7,7 @@
 // @match        *://wlangames.net/Basketball2.php*
 // @icon         https://www.google.com/s2/favicons?domain=wlangames.net
 // @grant        none
+// @run-at       document-end
 // ==/UserScript==
 
 (function() {
