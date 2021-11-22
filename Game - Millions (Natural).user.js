@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         World Language Games Automation for "Millions" (Natural)
+// @name         World Language Games Automation for "Millions" (Natural, Instant)
 // @namespace    http://www.github.com/engel03455
 // @version      1.2
 // @description  This script will automatically launch and complete the game "Millions" on World Language Games, while adding a random duration between 1:00 and 3:59, and 0 to 4 wrong guesses.
@@ -11,10 +11,13 @@
 
 //location.href = "javascript:void(gotoCongrats());"
 
-/*This is the command which completes the game.
+/*
+Above is the command which completes the game.
 It does record the time, so if your teacher sees that you played your games in 0 seconds,
-they would be aufully suspicious. I'm gonna work on that*/
+they would be aufully suspicious. I've fixed this problem.
+*/
 
+(function() {
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -78,3 +81,4 @@ if( document.PlayBingo.JulianTime.value == 0)
 }
 
 gotoCongratsedit();
+})();
