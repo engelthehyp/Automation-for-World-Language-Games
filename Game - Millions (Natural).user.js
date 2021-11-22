@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         World Language Games Automation for "Millions"
-// @namespace    none
+// @name         World Language Games Automation for "Millions" (Natural)
+// @namespace    http://www.github.com/engel03455
 // @version      1.2
-// @description  This script will automatically launch and complete the game "Millions" on World Language Games, while adding a random duration between 1:00 and 3:59, and 0 to 4 wrong guesses. You're welcome! :)
-// @author       Andrew Engelmann
+// @description  This script will automatically launch and complete the game "Millions" on World Language Games, while adding a random duration between 1:00 and 3:59, and 0 to 4 wrong guesses.
+// @author       http://www.github.com/engel03455
 // @match        *://wlangames.net/PlayGame.php?Game=Millions4Pts.php*
 // @icon         https://www.google.com/s2/favicons?domain=wlangames.net
 // @grant        none
