@@ -9,5 +9,7 @@
 // @grant        none
 // ==/UserScript==
 
-TotalPoints = 36;
-GotoCongratulations();
+(function() {
+	TotalPoints = 36;
+	GotoCongratulations();
+})();
