@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         World Language Games Automation for "Ping-Pong" (Completely Natural)
-// @namespace    null
+// @namespace    http://www.github.com/engel03455
 // @version      1.3
 // @description  Send the signal for correct answer no watter what answer is picked (Correct Answer, Wrong Answer, No Answer) and automatically ends the game once 32 to 35 vollies have been made.
-// @author       Andrew Engelmann
-// @match        https://wlangames.net/PingPong.php*
+// @author       http://www.github.com/engel03455
+// @match        *://wlangames.net/PingPong.php*
 // @icon         https://www.google.com/s2/favicons?domain=wlangames.net
 // @grant        none
 // ==/UserScript==
