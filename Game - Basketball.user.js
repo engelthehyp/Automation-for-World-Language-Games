@@ -4,7 +4,7 @@
 // @version      1.0
 // @description  This script will automatically complete the game "Basketball" as soon as it is launched, giving the maximum of 4 points.
 // @author       http://www.github.com/engel03455
-// @match        https://wlangames.net/Basketball2.php*
+// @match        *://wlangames.net/Basketball2.php*
 // @icon         https://www.google.com/s2/favicons?domain=wlangames.net
 // @grant        none
 // ==/UserScript==
