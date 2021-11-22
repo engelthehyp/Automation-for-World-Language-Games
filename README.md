@@ -5,7 +5,7 @@ These scripts will automate the playthrough of their respective games.
 There are also some other tools, which do things like select your name automatically and let you play disabled games.
 
 ## Games I've automated so far:
-- Millions (Adds random time between *1:00* and *4:59* and a random amount of wrong guesses between *0* and *4* for extra realism!)
+- Millions (Adds random time between *1:00* and *3:59* and a random amount of wrong guesses between *0* and *4* for extra realism!)
 - Basketball
 - Ping-Pong (Ultra realistic, actually **plays the game** for you, takes a bit of time but is completely undetectable, even if the teacher is looking over your shoulder)
 
