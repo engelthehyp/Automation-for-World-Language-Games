@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         World Language Games - Launch Disabled Games from Context Menu
+// @license      MIT
 // @namespace    https://github.com/engel03455/
 // @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Launch%20Disabled%20Games.user.js
 // @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Launch%20Disabled%20Games.user.js
