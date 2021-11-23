@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         World Language Games Automation for "Ping-Pong" (Completely Natural)
+// @license      MIT
 // @namespace    http://www.github.com/engel03455
 // @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Game%20-%20Ping-Pong%20(Completely%20Natural).user.js
 // @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Game%20-%20Ping-Pong%20(Completely%20Natural).user.js
