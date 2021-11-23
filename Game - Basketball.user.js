@@ -1,6 +1,8 @@
 // ==UserScript==
 // @name         World Language Games Automation for "Basketball"
 // @namespace    http://www.github.com/engel03455
+// @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Game%20-%20Basketball.user.js
+// @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Game%20-%20Basketball.user.js
 // @version      1.0
 // @description  This script will automatically complete the game "Basketball" as soon as it is launched, giving the maximum of 4 points.
 // @author       http://www.github.com/engel03455
