@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         World Language Games - Launch Disabled Games from Context Menu
 // @namespace    https://github.com/engel03455/
-// @downloadURL  
-// @updateURL    
+// @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Launch%20Disabled%20Games.user.js
+// @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Launch%20Disabled%20Games.user.js
 // @version      1.1
-// @description  Allows you to launch disabled games from the context menu.
+// @description  Allows you to launch disabled games from the context menu on the World Language Games homepage.
 // @author       https://github.com/engel03455/
 // @match        *://wlangames.net/*
+// @exclude      *://wlangames.net/PlayGame.php*
 // @icon         https://www.google.com/s2/favicons?domain=wlangames.net
 // @grant        none
 // @run-at       context-menu
