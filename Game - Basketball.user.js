@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         World Language Games Automation for "Basketball"
+// @license      MIT
 // @namespace    http://www.github.com/engel03455
 // @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Game%20-%20Basketball.user.js
 // @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Game%20-%20Basketball.user.js
