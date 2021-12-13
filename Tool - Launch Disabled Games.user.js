@@ -4,7 +4,7 @@
 // @namespace    https://github.com/engel03455/
 // @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Launch%20Disabled%20Games.user.js
 // @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Launch%20Disabled%20Games.user.js
-// @version      1.2
+// @version      1.3
 // @description  Allows you to launch disabled games by pressing the ALT + L keyboard shortcut on the World Language Games homepage.
 // @author       https://github.com/engel03455/
 // @match        *://wlangames.net/*
