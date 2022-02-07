@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         World Language Games Automation for "Millions" (Natural, Instant)
+// @name         World Language Games Automation for "Millions" (Natural, Instant) (THIS SCRIPT WILL NEVER WORK AGAIN, READ COMMIT)
 // @license      MIT
 // @namespace    http://www.github.com/engel03455
 // @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Game%20-%20Millions%20(Natural%2C%20Instant).user.js
 // @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Game%20-%20Millions%20(Natural%2C%20Instant).user.js
 // @version      1.2
-// @description  This script will automatically launch and complete the game "Millions" on World Language Games, while adding a random duration between 1:00 and 3:59, and 0 to 4 wrong guesses.
+// @description  This script will automatically launch and complete the game "Millions" on World Language Games, while adding a random duration between 1:00 and 3:59, and 0 to 4 wrong guesses. (THIS SCRIPT WILL NEVER WORK AGAIN, READ COMMIT)
 // @author       http://www.github.com/engel03455
 // @match        *://wlangames.net/PlayGame.php?Game=Millions4Pts.php*
 // @icon         https://www.google.com/s2/favicons?domain=wlangames.net
@@ -38,39 +38,29 @@ var cd = new Date();
 if( document.PlayBingo.JulianTime.value == 0)
 {
     document.PlayBingo.JulianTime.value = cd.getTime();
-
-
-
-
     // document.PlayBingo.pTimeCenter.value= document.getElementById("TimeCenter").innerHTML;
+	
     var NumberOfWrongGuesses = getRandomInt(0,4)
-    document.PlayBingo.pGuessLabel.value= ""+NumberOfWrongGuesses;
-
-    var obj = document.getElementById("TotalMins");
-
     var mincount = getRandomInt(1,3);
     var seccount = getRandomInt(0,59);
+	
+	document.PlayBingo.pGuessLabel.value= ""+NumberOfWrongGuesses;
+	
+	var obj = document.getElementById("TotalMins");
 
-    if(true){
-        obj.value = mincount;
-    }
+
+    obj.value = mincount;
 
 
     obj = document.getElementById("Minutes");
-    if(true){
-        obj.value = mincount;
-    }
+    obj.value = mincount;
 
     obj = document.getElementById("TotalSecs");
-    if(true){
-        obj.value = seccount;
-    }
+    obj.value = seccount;
 
 
     obj = document.getElementById("Seconds");
-    if(true){
-        obj.value = seccount;
-    }
+    obj.value = seccount;
 
 
     obj = document.getElementById("pTimeCenter");
