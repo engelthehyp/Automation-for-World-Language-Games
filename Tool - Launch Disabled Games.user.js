@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         World Language Games - Launch Disabled Games
 // @license      MIT
-// @namespace    https://github.com/engel03455/
+// @namespace    https://github.com/engel03455/Automation-for-World-Language-Games
 // @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Launch%20Disabled%20Games.user.js
 // @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Launch%20Disabled%20Games.user.js
 // @version      1.3
@@ -23,29 +23,28 @@
 		var GameToLaunch = prompt("Which disabled game should be launched?\n\n0 - Cancel\n1 - Find'em\n2 - Double Find'em\n3 - Car Puzzle\n\nAnswering blank or anything else will also cancel.");
 		
 		if (GameToLaunch == 0) {
-    		//DO NOTHING
+			//DO NOTHING
 		}
 		else if (GameToLaunch == 1) {
-    		SingleConcentration(); //Launches "Find'em"
+			SingleConcentration(); //Launches "Find'em"
 		}
 		else if (GameToLaunch == 2) {
-    		DoubleConcentration(); //Launches "Double Find'em"
+			DoubleConcentration(); //Launches "Double Find'em"
 		}
 		else if (GameToLaunch == 3) {
-    		gotoPlayCarPuzzle(); //Launches "Car Puzzle"
+			gotoPlayCarPuzzle(); //Launches "Car Puzzle"
 		}
 		else {
-    		//DO NOTHING
-    		//alert("Please send a valid response. Exiting...");
+			//DO NOTHING
+			//alert("Please send a valid response. Exiting...");
 		}
 	}
-    document.onkeyup=function(e){
+	document.onkeyup=function(e){
 	e = e || window.event; // for IE to cover IEs window object
-    if(e.altKey && e.which == 76) {
-        //alert('Keyboard shortcut working!');
-        launcher();
-        return false;
-    }
-}
+	if(e.altKey && e.which == 76) {
+		//alert('Keyboard shortcut working!');
+		launcher();
+		return false;
+	}
 }
 })();

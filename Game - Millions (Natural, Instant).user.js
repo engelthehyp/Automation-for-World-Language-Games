@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         World Language Games Automation for "Millions" (Natural, Instant) (THIS SCRIPT WILL NEVER WORK AGAIN, READ COMMIT)
 // @license      MIT
-// @namespace    http://www.github.com/engel03455
+// @namespace    https://github.com/engel03455/Automation-for-World-Language-Games
 // @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Game%20-%20Millions%20(Natural%2C%20Instant).user.js
 // @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Game%20-%20Millions%20(Natural%2C%20Instant).user.js
 // @version      1.2
@@ -23,9 +23,9 @@ they would be aufully suspicious. I've fixed this problem.
 
 (function() {
 function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function gotoCongratsedit()
@@ -37,39 +37,39 @@ var cd = new Date();
 
 if( document.PlayBingo.JulianTime.value == 0)
 {
-    document.PlayBingo.JulianTime.value = cd.getTime();
-    // document.PlayBingo.pTimeCenter.value= document.getElementById("TimeCenter").innerHTML;
+	document.PlayBingo.JulianTime.value = cd.getTime();
+	// document.PlayBingo.pTimeCenter.value= document.getElementById("TimeCenter").innerHTML;
 	
-    var NumberOfWrongGuesses = getRandomInt(0,4)
-    var mincount = getRandomInt(1,3);
-    var seccount = getRandomInt(0,59);
+	var NumberOfWrongGuesses = getRandomInt(0,4)
+	var mincount = getRandomInt(1,3);
+	var seccount = getRandomInt(0,59);
 	
 	document.PlayBingo.pGuessLabel.value= ""+NumberOfWrongGuesses;
 	
 	var obj = document.getElementById("TotalMins");
 
 
-    obj.value = mincount;
+	obj.value = mincount;
 
 
-    obj = document.getElementById("Minutes");
-    obj.value = mincount;
+	obj = document.getElementById("Minutes");
+	obj.value = mincount;
 
-    obj = document.getElementById("TotalSecs");
-    obj.value = seccount;
-
-
-    obj = document.getElementById("Seconds");
-    obj.value = seccount;
+	obj = document.getElementById("TotalSecs");
+	obj.value = seccount;
 
 
-    obj = document.getElementById("pTimeCenter");
-    if(seccount < 10){
-        obj.value = ""+mincount+":0"+seccount;
-    }
-    else{
-        obj.value = ""+mincount+":"+seccount;
-    }
+	obj = document.getElementById("Seconds");
+	obj.value = seccount;
+
+
+	obj = document.getElementById("pTimeCenter");
+	if(seccount < 10){
+		obj.value = ""+mincount+":0"+seccount;
+	}
+	else{
+		obj.value = ""+mincount+":"+seccount;
+	}
 
 }
 }
