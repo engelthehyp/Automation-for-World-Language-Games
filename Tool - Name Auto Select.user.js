@@ -2,8 +2,8 @@
 // @name         World Language Games - Name Auto Select
 // @license      MIT
 // @namespace    https://github.com/engel03455/Automation-for-World-Language-Games
-// @downloadURL
-// @updateURL
+// @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Name%20Auto%20Select.user.js
+// @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Name%20Auto%20Select.user.js
 // @version      1.0
 // @description  Automatically selects your name on the World Language Games homepage. You will have to set the number index of your name manually, but only once.
 // @author       https://github.com/engel03455/

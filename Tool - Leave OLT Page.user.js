@@ -2,8 +2,8 @@
 // @name         World Language Games - Leave OLT Page
 // @license      MIT
 // @namespace    https://github.com/engel03455/Automation-for-World-Language-Games
-// @downloadURL  
-// @updateURL    
+// @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Leave%20OLT%20Page.user.js
+// @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Leave%20OLT%20Page.user.js
 // @version      1.0
 // @description  Allows you to leave the OLT page without having it submit automatically.
 // @author       https://github.com/engel03455/
