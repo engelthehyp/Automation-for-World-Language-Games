@@ -20,35 +20,10 @@
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
-	function CheckAnswer () {
-		return(WrongAnswer-1); // Correct Answer!
-		ShouldEndGame();
-	}
-
-	var naturalending = getRandomInt(32,34);
-	//alert(naturalending+" guesses will be made before the game is ended");
-
-	function ShouldEndGame () {
-		var guesses = document.getElementById("Guesses");
-		if (guesses >= naturalending) {
-			return(WrongAnswer);
-		}
-	}
-
-	addJS_Node (CheckAnswer);
-
-	function addJS_Node (text, s_URL, funcToRun, runOnLoad) {
-		var D                                   = document;
-		var scriptNode                          = D.createElement ('script');
-		if (runOnLoad) {
-			scriptNode.addEventListener ("load", runOnLoad, false);
-		}
-		scriptNode.type                         = "text/javascript";
-		if (text)       scriptNode.textContent  = text;
-		if (s_URL)      scriptNode.src          = s_URL;
-		if (funcToRun)  scriptNode.textContent  = '(' + funcToRun.toString() + ')()';
-
-		var targ = D.getElementsByTagName ('head')[0] || D.body || D.documentElement;
-		targ.appendChild (scriptNode);
+	var naturalEnding = getRandomInt(32,34);
+	
+	window.CheckAnswer = function() {
+		var guesses = document.getElementById("Guesses").innerHTML;
+		return (parseInt(guesses) >= naturalEnding) ? (window.WrongAnswer) : (window.WrongAnswer - 1);
 	}
 })();

@@ -11,40 +11,44 @@
 // @exclude      *://wlangames.net/PlayGame.php*
 // @icon         https://www.google.com/s2/favicons?domain=wlangames.net
 // @grant        none
-// @run-at       document-start
+// @run-at       document-end
 // ==/UserScript==
 
-//Find 'Em - SingleConcentration();
-//Double Find 'Em - DoubleConcentration();
-//Car Puzzle - gotoPlayCarPuzzle();
+/*
+ * Find 'Em        - SingleConcentration();
+ * Double Find 'Em - DoubleConcentration();
+ * Car Puzzle      - gotoPlayCarPuzzle();
+ */
 
 (function() {
-	function launcher(){
-		var GameToLaunch = prompt("Which disabled game should be launched?\n\n0 - Cancel\n1 - Find'em\n2 - Double Find'em\n3 - Car Puzzle\n\nAnswering blank or anything else will also cancel.");
-		
-		if (GameToLaunch == 0) {
-			//DO NOTHING
-		}
-		else if (GameToLaunch == 1) {
-			SingleConcentration(); //Launches "Find'em"
-		}
-		else if (GameToLaunch == 2) {
-			DoubleConcentration(); //Launches "Double Find'em"
-		}
-		else if (GameToLaunch == 3) {
-			gotoPlayCarPuzzle(); //Launches "Car Puzzle"
-		}
-		else {
-			//DO NOTHING
-			//alert("Please send a valid response. Exiting...");
+	var launcherConfig = {
+		games: [
+			null, // So 0 still starts nothing.
+			window.SingleConcentration,
+			window.DoubleConcentration,
+			window.gotoPlayCarPuzzle
+		],
+		prompt: "Which disabled game should be launched?\n\n"+
+				"0 - Cancel\n"+
+				"1 - Find'em\n"+
+				"2 - Double Find'em\n"+
+				"3 - Car Puzzle\n\n"+
+				"Answering blank or anything else will also cancel."
+	}
+
+	function launcher(config){
+		var gameToLaunch = prompt(config.prompt);
+
+		config.games.forEach(function (game, index){
+			gameToLaunch == index ? game() : false;
+		});
+	}
+	
+	document.onkeyup = function (e){
+		e = e || window.event; // for IE to cover IEs window object
+		if (e.altKey && e.which == 76) { // ALT + L
+			launcher(launcherConfig);
+			return;
 		}
 	}
-	document.onkeyup=function(e){
-	e = e || window.event; // for IE to cover IEs window object
-	if(e.altKey && e.which == 76) {
-		//alert('Keyboard shortcut working!');
-		launcher();
-		return false;
-	}
-}
 })();

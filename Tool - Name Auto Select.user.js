@@ -14,12 +14,14 @@
 // @run-at       document-end
 // ==/UserScript==
 
-// TO FIND THE INDEX:
-// Start counting at 0.
-// For every name in the dropdown, add 1. (Including the "Enter your name" and "Special guest" options)
-// Stop when you get to your name. That number is the index.
+/*
+ * TO FIND THE INDEX:
+ * Start counting at 0.
+ * For every name in the dropdown, add 1. (Including the "Enter your name" and "Special guest" options)
+ * Stop when you get to your name. That number is the index.
+ */
 
-nameIndex = 0; // Enter the index of your name here.
+var nameIndex = 0; // Enter the index of your name here
 
 (function() {
 	document.getElementById("Student").selectedIndex = nameIndex;

@@ -13,66 +13,33 @@
 // @run-at       document-end
 // ==/UserScript==
 
-//location.href = "javascript:void(gotoCongrats());"
 
 /*
-Above is the command which completes the game.
-It does record the time, so if your teacher sees that you played your games in 0 seconds,
-they would be aufully suspicious. I've fixed this problem.
-*/
+ * location.href = "javascript:void(gotoCongrats());"
+ * 
+ * Above is the command which completes the game.
+ * It does record the time, so if your teacher sees that you played your games in 0 seconds,
+ * they would be aufully suspicious. I've fixed this problem.
+ */
 
 (function() {
-function getRandomInt(min, max) {
-	min = Math.ceil(min);
-	max = Math.floor(max);
-	return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function gotoCongratsedit()
-{
-
-var cd = new Date();
-
-
-
-if( document.PlayBingo.JulianTime.value == 0)
-{
-	document.PlayBingo.JulianTime.value = cd.getTime();
-	// document.PlayBingo.pTimeCenter.value= document.getElementById("TimeCenter").innerHTML;
-	
-	var NumberOfWrongGuesses = getRandomInt(0,4)
-	var mincount = getRandomInt(1,3);
-	var seccount = getRandomInt(0,59);
-	
-	document.PlayBingo.pGuessLabel.value= ""+NumberOfWrongGuesses;
-	
-	var obj = document.getElementById("TotalMins");
-
-
-	obj.value = mincount;
-
-
-	obj = document.getElementById("Minutes");
-	obj.value = mincount;
-
-	obj = document.getElementById("TotalSecs");
-	obj.value = seccount;
-
-
-	obj = document.getElementById("Seconds");
-	obj.value = seccount;
-
-
-	obj = document.getElementById("pTimeCenter");
-	if(seccount < 10){
-		obj.value = ""+mincount+":0"+seccount;
-	}
-	else{
-		obj.value = ""+mincount+":"+seccount;
+	function getRandomInt(min, max) {
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
-}
-}
+	document.PlayBingo.JulianTime.value = new Date().getTime();
 
-gotoCongratsedit();
+	var wrongGuessCount = getRandomInt(0,4);
+	var minCount = getRandomInt(1,3);
+	var secCount = getRandomInt(0,59);
+
+	document.PlayBingo.pGuessLabel.value         = String(wrongGuessCount);
+	document.getElementById("TotalMins").value   = minCount;
+	document.getElementById("Minutes").value     = minCount;
+	document.getElementById("TotalSecs").value   = secCount;
+	document.getElementById("Seconds").value     = secCount;
+	document.getElementById("pTimeCenter").value = String((secCount < 10) ?
+		minCount + ":0" + secCount : minCount + ":" + secCount)
 })();

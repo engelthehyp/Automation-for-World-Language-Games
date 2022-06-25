@@ -14,6 +14,6 @@
 // ==/UserScript==
 
 (function() {
-	TotalPoints = 36;
-	GotoCongratulations();
+	Window.TotalPoints = 36;
+	Window.GotoCongratulations();
 })();
