@@ -20,7 +20,7 @@
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
-	var naturalEnding = getRandomInt(32,34);
+	var naturalEnding = getRandomInt(32,35);
 	
 	window.CheckAnswer = function() {
 		var guesses = document.getElementById("Guesses").innerHTML;
