@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         World Language Games - Automation for "Millions" (Natural, Instant) (THIS SCRIPT WILL NEVER WORK AGAIN, READ COMMIT)
+// @name         World Language Games - Automation for "Millions" (DEFUNCT)
 // @license      MIT
 // @namespace    https://github.com/engel03455/Automation-for-World-Language-Games
 // @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Game%20-%20Millions%20(Defunct).user.js
 // @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Game%20-%20Millions%20(Defunct).user.js
 // @version      1.2
-// @description  This script will automatically launch and complete the game "Millions" on World Language Games, while adding a random duration between 1:00 and 3:59, and 0 to 4 wrong guesses. (THIS SCRIPT WILL NEVER WORK AGAIN, READ COMMIT)
+// @description  This script will automatically launch and complete the game "Millions" on World Language Games, while adding a random duration between 1:00 and 3:59, and 0 to 4 wrong guesses. PLEASE NOTE - This script is defunct and was made for an older version of Millions that has since been updated.
 // @author       http://www.github.com/engel03455
 // @match        *://wlangames.net/PlayGame.php?Game=Millions4Pts.php*
 // @icon         https://www.google.com/s2/favicons?domain=wlangames.net
