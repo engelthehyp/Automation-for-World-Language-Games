@@ -18,7 +18,7 @@
  * location.href = "javascript:void(gotoCongrats());"
  * 
  * Above is the command which completes the game.
- * It does record the time, so if your teacher sees that you played your games in 0 seconds,
+ * It does record the time, so if your teacher sees that you played your games in 0 seconds, 
  * they would be aufully suspicious. I've fixed this problem.
  */
 
@@ -31,9 +31,9 @@
 
 	document.PlayBingo.JulianTime.value = new Date().getTime();
 
-	var wrongGuessCount = getRandomInt(0,4);
-	var minCount = getRandomInt(1,3);
-	var secCount = getRandomInt(0,59);
+	var wrongGuessCount = getRandomInt(0, 4);
+	var minCount = getRandomInt(1, 3);
+	var secCount = getRandomInt(0, 59);
 
 	document.PlayBingo.pGuessLabel.value         = String(wrongGuessCount);
 	document.getElementById("TotalMins").value   = minCount;
