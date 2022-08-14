@@ -18,3 +18,4 @@ There are also some other tools, which do things like select your name automatic
 - Leave OLT Page (New!)
 
 I hope they come in handy for you.
+[![BCH compliance](https://bettercodehub.com/edge/badge/engel03455/Automation-for-World-Language-Games?branch=main)](https://bettercodehub.com/)
