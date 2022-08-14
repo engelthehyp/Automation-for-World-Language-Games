@@ -1,5 +1,7 @@
 # Automation for World Language Games
 
+[![BCH compliance](https://bettercodehub.com/edge/badge/engel03455/Automation-for-World-Language-Games?branch=main)](https://bettercodehub.com/)
+
 Are you tired of doing your World Language Games? I know I *was*. Do you wish you had a tool to do them for you? Well, now your wish has come true!
 
 These userscripts will automate the playthrough of their respective games.
@@ -18,4 +20,3 @@ There are also some other tools, which do things like select your name automatic
 - Leave OLT Page (New!)
 
 I hope they come in handy for you.
-[![BCH compliance](https://bettercodehub.com/edge/badge/engel03455/Automation-for-World-Language-Games?branch=main)](https://bettercodehub.com/)
