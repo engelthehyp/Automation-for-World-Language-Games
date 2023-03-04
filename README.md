@@ -1,6 +1,6 @@
 # Automation for World Language Games
 
-A collection of userscript that automate playing games or allow you to perform useful actions on the World Language Games site.
+A collection of userscripts that automate playing games or allow you to perform useful actions on the World Language Games site.
 
 These userscripts will automate the playthrough of their respective games.
 There are also some other tools, which let you do things like select your name automatically and let you play games that have been disabled.
