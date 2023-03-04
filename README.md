@@ -1,22 +1,18 @@
 # Automation for World Language Games
 
-[![BCH compliance](https://bettercodehub.com/edge/badge/engel03455/Automation-for-World-Language-Games?branch=main)](https://bettercodehub.com/)
-
-Are you tired of doing your World Language Games? I know I *was*. Do you wish you had a tool to do them for you? Well, now your wish has come true!
+A collection of userscript that automate playing games or allow you to perform useful actions on the World Language Games site.
 
 These userscripts will automate the playthrough of their respective games.
-There are also some other tools, which do things like select your name automatically and let you play games that have been disabled.
+There are also some other tools, which let you do things like select your name automatically and let you play games that have been disabled.
 
-## Games I've automated so far
+## Games I've automated
 
-- ~~Millions (Adds random time between *1:00* and *3:59* and a random amount of wrong guesses between *0* and *4* for extra realism!)~~ Millions has had its constuction changed completely, so this script will no longer work. I might be able to make a new script for the new Millions game sometime.
-- Basketball (Now, that game is no longer under construction. **The old script works exactly as well** as the new one, so both scripts are exactly the same, which is good. It does make me wonder what was changed, though.)
-- Ping-Pong (Ultra realistic, actually **plays the game** for you, takes a bit of time but is completely undetectable, even if the teacher is looking over your shoulder)
+- ~~Millions (Adds random time between *1:00* and *3:59* and a random amount of wrong guesses between *0* and *4* for realism)~~ Millions has had its constuction changed, so this script will no longer work. I might be able to make a new script for the new Millions game sometime.
+- Basketball (Which is no longer under construction. **The old script works exactly as well** as the new one, so both the old and new scripts are the same. That's good, no adaptation needed. It does make me wonder what was changed, though.)
+- Ping-Pong (Slower, but **plays the game** for you, most useful in the classroom)
 
-## Tools I've made so far
+## Tools I've made
 
 - Name Auto-select
 - Disabled Games Launcher
-- Leave OLT Page (New!)
-
-I hope they come in handy for you.
+- Leave OLT Page
