@@ -23,32 +23,25 @@
 (function() {
 	var launcherConfig = {
 		games: [
-			null, // So 0 still starts nothing.
 			window.SingleConcentration,
 			window.DoubleConcentration,
-			window.gotoPlayCarPuzzle
+			window.gotoPlayCarPuzzle,
 		],
-		prompt: "Which disabled game should be launched?\n\n"+
-				"0 - Cancel\n"+
-				"1 - Find'em\n"+
-				"2 - Double Find'em\n"+
-				"3 - Car Puzzle\n\n"+
-				"Answering blank or anything else will also cancel."
+		prompt: "Which disabled game should be launched?\n\n" +
+				"1 - Find'em\n" +
+				"2 - Double Find'em\n" +
+				"3 - Car Puzzle\n\n" +
+				"Answering anything else will cancel."
 	}
 
 	function launcher(config){
-		var gameToLaunch = prompt(config.prompt);
-
-		config.games.forEach(function (game, index){
-			gameToLaunch == index ? game() : false;
-		});
+		var gameIndex = parseInt(prompt(config.prompt)) - 1;
+		if (gameIndex in config.games) config.games[gameIndex]();
 	}
 	
 	document.onkeyup = function (e){
 		e = e || window.event; // for IE to cover IEs window object
-		if (e.altKey && e.which == 76) { // ALT + L
+		if (e.altKey && e.which == 76) // ALT + L
 			launcher(launcherConfig);
-			return;
-		}
 	}
 })();
