@@ -14,16 +14,16 @@
 // ==/UserScript==
 
 (function () {
-	"use strict";
+	'use strict';
 
 	const rightAnswer = window.WrongAnswer - 1;
 	const wrongAnswer = window.WrongAnswer;
 	const turnsToTake = getRandomInt(32, 35);
-	
+
 	window.CheckAnswer = function () {
-		const turnsTaken = document.getElementById("Guesses").innerHTML;
-		return parseInt(turnsTaken) < turnsToTake ? rightAnswer: wrongAnswer;
-	}
+		const turnsTaken = document.getElementById('Guesses').innerHTML;
+		return parseInt(turnsTaken) < turnsToTake ? rightAnswer : wrongAnswer;
+	};
 
 	function getRandomInt(min, max) {
 		min = Math.ceil(min);

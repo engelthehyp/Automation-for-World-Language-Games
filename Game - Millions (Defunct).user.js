@@ -14,16 +14,14 @@
 // ==/UserScript==
 
 
-/*
- * location.href = "javascript:void(gotoCongrats());"
- * 
- * Above is the command which completes the game.
+/**
+ * gotoCongrats() is the command which completes the game.
  * It does record the time, so if your teacher sees that you played your games in 0 seconds, 
  * they would be aufully suspicious. I've fixed this problem.
  */
 
 (function() {
-	"use strict";
+	'use strict';
 
 	document.PlayBingo.JulianTime.value = new Date().getTime();
 

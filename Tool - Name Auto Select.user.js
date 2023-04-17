@@ -22,8 +22,8 @@
  */
 
 (function () {
-	"use strict";
+	'use strict';
 
 	const nameIndex = 0; // Enter the index of your name here
-	document.getElementById("Student").selectedIndex = nameIndex;
+	document.getElementById('Student').selectedIndex = nameIndex;
 })();
