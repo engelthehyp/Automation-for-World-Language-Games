@@ -22,6 +22,7 @@
 
 (function () {
 	'use strict';
+	
 	class NamedValue {
 		constructor(name, value) {
 			this.name = name;
