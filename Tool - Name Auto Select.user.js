@@ -4,7 +4,7 @@
 // @namespace    https://github.com/engel03455/Automation-for-World-Language-Games
 // @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Name%20Auto%20Select.user.js
 // @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Name%20Auto%20Select.user.js
-// @version      1.0
+// @version      1.1
 // @description  Automatically selects your name on the World Language Games homepage. You will have to set the number index of your name manually, but only once.
 // @author       https://github.com/engel03455/
 // @match        *://wlangames.net/*
@@ -14,15 +14,16 @@
 // @run-at       document-end
 // ==/UserScript==
 
-/*
+/**
  * TO FIND THE INDEX:
  * Start counting at 0.
  * For every name in the dropdown, add 1. (Including the "Enter your name" and "Special guest" options)
  * Stop when you get to your name. That number is the index.
  */
 
-var nameIndex = 0; // Enter the index of your name here
+(function () {
+	"use strict";
 
-(function() {
+	const nameIndex = 0; // Enter the index of your name here
 	document.getElementById("Student").selectedIndex = nameIndex;
 })();
