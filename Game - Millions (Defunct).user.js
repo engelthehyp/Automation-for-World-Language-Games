@@ -13,33 +13,40 @@
 // @run-at       document-end
 // ==/UserScript==
 
-
 /**
  * gotoCongrats() is the command which completes the game.
- * It does record the time, so if your teacher sees that you played your games in 0 seconds, 
+ * It does record the time, so if your teacher sees that you played your games in 0 seconds,
  * they would be aufully suspicious. I've fixed this problem.
  */
 
-(function() {
+(function () {
 	'use strict';
-
-	document.PlayBingo.JulianTime.value = new Date().getTime();
 
 	const wrongGuessCount = getRandomInt(0, 4);
 	const minutesPlayed = getRandomInt(1, 3);
 	const secondsPlayed = getRandomInt(0, 59);
 
-	document.PlayBingo.pGuessLabel.value         = String(wrongGuessCount);
-	document.getElementById("TotalMins").value   = minutesPlayed;
-	document.getElementById("Minutes").value     = minutesPlayed;
-	document.getElementById("TotalSecs").value   = secondsPlayed;
-	document.getElementById("Seconds").value     = secondsPlayed;
-	document.getElementById("pTimeCenter").value = formatTime(minutesPlayed, secondsPlayed);
-	
+	const timeElementsAndAmounts = {
+		TotalMins: minutesPlayed,
+		Minutes: minutesPlayed,
+		TotalSecs: secondsPlayed,
+		Seconds: secondsPlayed,
+		pTimeCenter: formatTime(minutesPlayed, secondsPlayed),
+	};
+
+	const element = document.getElementById;
+
+	document.PlayBingo.JulianTime.value = new Date().getTime();
+	document.PlayBingo.pGuessLabel.value = String(wrongGuessCount);
+
+	Object.entries(timeElementsAndAmounts).forEach(
+		([id, amount]) => (element(id).value = amount)
+	);
+
 	function formatTime(minutes, seconds) {
 		return `${minutes}:${String(seconds).padStart(2, '0')}`;
 	}
-	
+
 	function getRandomInt(min, max) {
 		min = Math.ceil(min);
 		max = Math.floor(max);
