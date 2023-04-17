@@ -13,7 +13,9 @@
 // @run-at       document-end
 // ==/UserScript==
 
-(function() {
+(function () {
+	'use strict';
+
 	window.TotalPoints = 36;
 	window.GotoCongratulations();
 })();
