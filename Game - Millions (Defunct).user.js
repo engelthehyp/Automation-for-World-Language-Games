@@ -23,23 +23,28 @@
  */
 
 (function() {
+	"use strict";
+
+	document.PlayBingo.JulianTime.value = new Date().getTime();
+
+	const wrongGuessCount = getRandomInt(0, 4);
+	const minutesPlayed = getRandomInt(1, 3);
+	const secondsPlayed = getRandomInt(0, 59);
+
+	document.PlayBingo.pGuessLabel.value         = String(wrongGuessCount);
+	document.getElementById("TotalMins").value   = minutesPlayed;
+	document.getElementById("Minutes").value     = minutesPlayed;
+	document.getElementById("TotalSecs").value   = secondsPlayed;
+	document.getElementById("Seconds").value     = secondsPlayed;
+	document.getElementById("pTimeCenter").value = formatTime(minutesPlayed, secondsPlayed);
+	
+	function formatTime(minutes, seconds) {
+		return `${minutes}:${String(seconds).padStart(2, '0')}`;
+	}
+	
 	function getRandomInt(min, max) {
 		min = Math.ceil(min);
 		max = Math.floor(max);
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
-
-	document.PlayBingo.JulianTime.value = new Date().getTime();
-
-	var wrongGuessCount = getRandomInt(0, 4);
-	var minCount = getRandomInt(1, 3);
-	var secCount = getRandomInt(0, 59);
-
-	document.PlayBingo.pGuessLabel.value         = String(wrongGuessCount);
-	document.getElementById("TotalMins").value   = minCount;
-	document.getElementById("Minutes").value     = minCount;
-	document.getElementById("TotalSecs").value   = secCount;
-	document.getElementById("Seconds").value     = secCount;
-	document.getElementById("pTimeCenter").value = String((secCount < 10) ?
-		minCount + ":0" + secCount : minCount + ":" + secCount)
 })();
