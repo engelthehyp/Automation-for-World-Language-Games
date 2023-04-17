@@ -21,6 +21,7 @@
  */
 
 (function () {
+	"use strict";
 	class NamedValue {
 		constructor(name, value) {
 			this.name = name;
@@ -44,7 +45,7 @@
 			'Which disabled game should be launched?' +
 			'\n\n' +
 			games
-				.map((item, index) => `${index + 1} - ${item.toString()}`)
+				.map((item, index) => `${index + 1} - ${item}`)
 				.join('\n') +
 			'\n\n' +
 			'Answering anything else will cancel.',
