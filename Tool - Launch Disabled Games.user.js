@@ -4,7 +4,7 @@
 // @namespace    https://github.com/engel03455/Automation-for-World-Language-Games
 // @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Launch%20Disabled%20Games.user.js
 // @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Launch%20Disabled%20Games.user.js
-// @version      2.0
+// @version      2.1
 // @description  Allows you to launch disabled games by pressing the ALT + L keyboard shortcut on the World Language Games homepage.
 // @author       https://github.com/engel03455/
 // @match        *://wlangames.net/*
@@ -20,28 +20,45 @@
  * Car Puzzle      - gotoPlayCarPuzzle();
  */
 
-(function() {
-	var launcherConfig = {
-		games: [
-			window.SingleConcentration,
-			window.DoubleConcentration,
-			window.gotoPlayCarPuzzle,
-		],
-		prompt: "Which disabled game should be launched?\n\n" +
-				"1 - Find'em\n" +
-				"2 - Double Find'em\n" +
-				"3 - Car Puzzle\n\n" +
-				"Answering anything else will cancel."
+(function () {
+	class NamedValue {
+		constructor(name, value) {
+			this.name = name;
+			this.value = value;
+		}
+
+		toString() {
+			return this.name;
+		}
 	}
 
-	function launcher(config){
-		var gameIndex = parseInt(prompt(config.prompt)) - 1;
-		if (gameIndex in config.games) config.games[gameIndex]();
+	const games = [
+		new NamedValue("Find 'Em", window.SingleConcentration),
+		new NamedValue("Double Find 'Em", window.DoubleConcentration),
+		new NamedValue('Car Puzzle', window.gotoPlayCarPuzzle),
+	];
+
+	const launcherConfig = {
+		games: games,
+		prompt:
+			'Which disabled game should be launched?' +
+			'\n\n' +
+			games
+				.map((item, index) => `${index + 1} - ${item.toString()}`)
+				.join('\n') +
+			'\n\n' +
+			'Answering anything else will cancel.',
+	};
+
+	function launcher(config) {
+		const gameIndex = parseInt(prompt(config.prompt)) - 1;
+		config.games[gameIndex]?.value();
 	}
-	
-	document.onkeyup = function (e){
+
+	document.onkeyup = function (e) {
 		e = e || window.event; // for IE to cover IEs window object
-		if (e.altKey && e.which == 76) // ALT + L
+		if (e.altKey && e.which == 76)
+			// ALT + L
 			launcher(launcherConfig);
-	}
+	};
 })();
