@@ -15,5 +15,6 @@
 // ==/UserScript==
 
 (function () {
+	"use strict";
 	$(window).off("blur");
 })();
