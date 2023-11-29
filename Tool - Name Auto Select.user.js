@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         World Language Games - Name Auto Select
 // @license      MIT
-// @namespace    https://github.com/engel03455/Automation-for-World-Language-Games
-// @downloadURL  https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Name%20Auto%20Select.user.js
-// @updateURL    https://github.com/engel03455/Automation-for-World-Language-Games/raw/main/Tool%20-%20Name%20Auto%20Select.user.js
+// @namespace    https://github.com/engelthehyp/Automation-for-World-Language-Games
+// @downloadURL  https://github.com/engelthehyp/Automation-for-World-Language-Games/raw/main/Tool%20-%20Name%20Auto%20Select.user.js
+// @updateURL    https://github.com/engelthehyp/Automation-for-World-Language-Games/raw/main/Tool%20-%20Name%20Auto%20Select.user.js
 // @version      1.1
 // @description  Automatically selects your name on the World Language Games homepage. You will have to set the number index of your name manually, but only once.
-// @author       https://github.com/engel03455/
+// @author       https://github.com/engelthehyp/
 // @match        *://wlangames.net/*
 // @exclude      *://wlangames.net/PlayGame.php*
 // @icon         https://www.google.com/s2/favicons?domain=wlangames.net
