@@ -6,7 +6,7 @@
 // @updateURL    https://github.com/engelthehyp/Automation-for-World-Language-Games/raw/main/Game%20-%20Ping-Pong.user.js
 // @version      2.1
 // @description  Sends the signal for correct answer no matter what answer is picked (Correct Answer, Wrong Answer, No Answer) and automatically ends the game once 32 to 35 vollies have been made.
-// @author       http://www.github.com/engelthehyp
+// @author       https://www.github.com/engelthehyp
 // @match        *://wlangames.net/PingPong.php*
 // @icon         https://www.google.com/s2/favicons?domain=wlangames.net
 // @grant        none
