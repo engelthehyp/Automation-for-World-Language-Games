@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         World Language Games - Automation for "Chinese Wordle"
+// @name         World Language Games - Automation for "Chinese Wordle" and "Pinyin Wordle"
 // @license      MIT
 // @namespace    https://github.com/engelthehyp/Automation-for-World-Language-Games
 // @version      1.1
